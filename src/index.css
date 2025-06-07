@@ -1,0 +1,118 @@
+:root {
+  /* Font Families */
+  --font-title: 'Space Grotesk', 'Montserrat', Arial, sans-serif;
+  --font-subtitle: 'Nunito', Arial, sans-serif;
+  --font-heading: 'Lexend', 'Montserrat', Arial, sans-serif;
+  --font-subheading: 'Poppins', 'Roboto', 'Lato', Arial, sans-serif;
+  --font-section-header: 'Bebas Neue', Arial, sans-serif;
+  --font-body: 'Open Sans', 'Lora', Arial, sans-serif;
+  --font-quote: 'Playfair Display', 'Cormorant Garamond', serif;
+  --font-caption: 'Source Sans Pro', Arial, sans-serif;
+
+  /* Color Palette */
+  --color-base: #F4EBDC;
+  --color-primary: #3A506B;
+  --color-primary-contrast: #fff;
+  --color-secondary: #B08968;
+  --color-accent: #6C757D;
+  --color-highlight: #D8C3A5;
+  --color-muted: #A9927D;
+  --color-soft: #C8B6A6;
+
+  /* Text */
+  --color-text-main: #3A506B;
+  --color-text-secondary: #6C757D;
+  --color-link: #3A506B;
+  --color-link-hover: #B08968;
+
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--color-text-main);
+  background-color: var(--color-base);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+  min-height: 100vh;
+  font-family: var(--font-body);
+  background: var(--color-base);
+  color: var(--color-text-main);
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  font-family: var(--font-body);
+  font-weight: 500;
+  color: var(--color-link);
+  text-decoration: inherit;
+  transition: color 0.2s;
+}
+a:hover {
+  color: var(--color-link-hover);
+}
+
+h1, h2, h3 {
+  font-family: var(--font-heading);
+  color: var(--color-primary);
+}
+h4, h5, h6 {
+  font-family: var(--font-subheading);
+  color: var(--color-accent);
+}
+
+section {
+  background: var(--color-highlight);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: var(--font-body);
+  background-color: var(--color-primary);
+  color: var(--color-primary-contrast);
+  cursor: pointer;
+  transition: background 0.25s, border-color 0.25s;
+}
+button:hover {
+  background-color: var(--color-secondary);
+  border-color: var(--color-accent);
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+
+.caption {
+  font-family: var(--font-caption);
+  color: var(--color-muted);
+  font-size: 0.85em;
+}
+
+blockquote, .quote {
+  font-family: var(--font-quote);
+  color: var(--color-secondary);
+  font-style: italic;
+  border-left: 4px solid var(--color-secondary);
+  margin: 1em 0;
+  padding-left: 1em;
+}
+
+.section-header {
+  font-family: var(--font-section-header);
+  color: var(--color-secondary);
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}
